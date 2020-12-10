@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome Gamer!</title>
+    <link rel = "icon" href = "./images/logo.jpg">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+  <img 
+    class = "fixedlogo"
+    width = "30"
+    height = "30"
+    background-color: none;
+    src = "./images/logo.jpg"
+    />
+    <header>
+      <p class="gamier">GAMIER</p>
+      <p class="catchphrase">Learn about Esports, and some of the largest competitive games!</p>
+    </header>
+    <article id="theme">
+      <h2 id="themeheader">Pick a Theme</h2>
+      <div class="child">
+        <input type="radio" name="myradios" id="default" onchange="setbackground('#4a4a46','#18c7f2','#3519E8','black');" checked/>
+        <label for = "default"> Default </label> 
+      </div>
+      <div class="child">
+        <input type="radio" name="myradios" id="light" onchange="setbackground('#d9d4eb','	#fde9ea','#ed695f', '#2a3074');"/>
+        <label for = "light"> Light </label>
+      </div>
+      <div class="child">
+        <input type="radio" name="myradios" id="dark" onchange="setbackground('#121212','#2b2c2d','#00cbe6','white');"/>
+        <label for = "darktheme"> Dark </label>
+      </div>
+      <div class="child">
+        <input type="radio" name="myradios" id="warm" onchange="setbackground('#ffca7b','#ff7251', '#ffedbf', '#9b2948');"/>
+        <label for = "warm"> Warm </label>  
+      </div>
+      <div class="child">
+        <input type="radio" name="myradios" id="green" onchange="setbackground('#83d859','#f0f0f0','#bfd25d','black');"/>
+        <label for = "green"> Green </label>
+      </div>
+      <div class="child">
+        <input type="radio" name="myradios" id="blue" onchange="setbackground('#122647','#3e92f4','	#4ee7ff','white');"/>
+        <label for = "blue"> Blue </label>  
+      </div>
+      
+      
+    </article>
+    <article>
+      <h2>What are Esports?</h2>
+      <p class= "gameinfo">
+        Esports are a form of competition in video games. Esports often takes the
+        form of organized, multiplayer video game competitions, particularly
+        between professional players, individually or as teams
+      </p>
+    </article>
+    
+    <article>
+      <h2>General Tips</h2>
+      <p class = "gameinfo">
+        Getting "good" at the game requires dedication,
+        patience, and communication. Spending time to improve your own abilities
+        is necessary and working on being a team player is just as important. A
+        team player needs to effictevily communicate with his team in order to
+        secure the objective.
+      </p>
+      <p class = "gameinfo">
+    
+        When it comes to any game, there are four important things you should
+        have, a decent computer that can run the game with smooth settings, this
+        doesn't mean the computer must run the game at the best settings smoothly
+        but the game should be playable. Since most time will be spent online
+        facing opponents to get better, a good internet connection is important,
+        trying to get better in a laggy environment helps no one. A decent
+        keyboard/mouse is also useful. Anyone will work, but investing in a
+        mechanical keyboard and a mouse with good response time can improve your
+        play in these very competitive games. Finally, a headset is also
+        advantageous, being able to communicate with your team is important so a
+        decent mic and headphones will make communication much easier.
+      </p>
+    </article>
+    <article>
+    <nav>
+      <h4 id="games">Pick a game to explore more about it</h4>
+      <a href="#rocketleague">
+        <img 
+          class="index"
+          alt="Rocket League"
+          src="./images/rocketleague.jpg"
+          width="320"
+          height="180"
+        />
+      </a>
+      <a href="#csgo">
+        <img
+          class="index"
+          alt="csgo"
+          src="./images/csgo2.jpg"
+          width="320"
+          height="180"
+        />
+      </a>
+      <a href="#valorant">
+        <img
+          class="index"
+          alt="Valorant"
+          src="./images/valorant.jpg"
+          width="320"
+          height="180"
+        />
+      </a>
+      <a href="#rainbowsix">
+        <img
+          class="index"
+          alt="Rainbow Six: Siege"
+          src="./images/r63.jpg"
+          width="320"
+          height="180"
+        />
+      </a>
+    </nav>
+    </article>
+ 
+    
+    <section>
+      
+      <a id="rocketleague"></a>
+      <h2>Rocket League (<i>2015</i>)</h2>
+      
+      <p class = "gameinfo">
+        Rocket League is a competitive team battle where players face off in a
+        street soccer style matchup in cars. The game has many modes including
+        differing number of teammates, different ball and goal style, and a mode
+        where players get special abilities. In the competitive scene, the most
+        common game type is 3v3s.
+      </p>
+      <p>
+        $9M+ total prize money earned
+        <a href="https://www.esportsearnings.com/games/409-rocket-league">
+          Learn more
+        </a>
+      </p>
+      
+      <details>
+        <summary>
+          Top Organizations
+        </summary>
+        <ul>
+          <li>NRG</li>
+          <li>Vitality</li>
+          <li>Dignitas</li>
+          <li>Spacestation Gaming</li>
+          <li>G2</li>
+        </ul>
+      </details>
+      <br>
+      <a class= "standalonelink" href="https://www.rocketleagueesports.com/">Recent match results, standings, and team stats</a>
+      <figure onmousemove="moveme(event,'airdribble')">
+        <img
+          alt="Air Dribble"
+          src="./images/airdribble.gif"
+          width="320"
+          height="180"
+        />
+        <figcaption id=airdribble>
+        An air dribble, a skill utilized by all pros.
+        </figcaption>
+      </figure>
+      <h3>
+        Necessary Skills
+      </h3>
+      <ol>
+        <li>
+          <strong>Mechanical skills-</strong> Rocket League leans heavily on mechanical ability,
+          top players spend many hours perfecting mechanical prowess to master
+          ball control in any situation. Playing goalie, dribbling on the ground
+          or air, and passing and shooting all utilize mechanical skill the
+          harder they get.
+        </li>
+        <li>
+          <strong>Positional knowledge-</strong> Rocket league is a very fast paced game, knowing
+          where to be at what time is the difference between a successful save or
+          shot.
+        </li>
+      </ol>
+      <br>
+      <figure onmousemove="moveme(event,'visualsettings')">
+        <img
+          alt="visualsettings"
+          src="./images/VisualSettingsRL.jpg"
+          width="300"
+          height="160"
+        />
+        <figcaption id="visualsettings">
+        A look inside Rocket League's visual settings
+        </figcaption>
+      </figure>
+      <h3>
+        Things to Consider
+      </h3>
+      <ul>
+        <li>
+          Unlike the other esports, most rocket league pros use a controller
+          instead of mouse and keyboard to excel at the game. Investing in a
+          controller is highly recommended if you want to get into competitive
+          Rocket League, most pros use dualshock 4 or 3 controllers or xbox
+          controllers.
+        </li>
+        <li>
+          Visual settings have a big impact on the game, the angle that you see
+          your car and the rest of the game will affect how you play. Finding a
+          style that suits you is important, but for a start
+          <a href="https://www.rocketleaguepros.com/">This link</a> will show
+          you the settings pros use which you can test out for yourself.
+        </li>
+      </ul>
+      <h3>
+        Tips and Tricks
+      </h3>
+      <p class="info">
+        Rocket league as mentioned before focuses on mechanical skill, spending
+        time practicing the game and getting down the muscle memory for the game
+        will make you better over time.
+        <a href="https://www.youtube.com/watch?v=PRFBbXJKxQE">This</a> video by
+        Helical on youtube goes over various specific tips to help you climb the
+        ranks of Rocket League.
+      </p>
+      <br>
+      <button>Select a New Game to Explore</button>
+    </section>
+    
+    <section>
+      <a id="csgo"></a>
+      <h2>CS:GO (<i>2012</i>)</h2>
+      <p class = "gameinfo">
+        Counter Strike: Global Offensive, CSGO, or even more simply referred to
+        as CS, is a competitive shooter. The most common game-type is
+        competitive 5v5s, games are a best of 30 where teams play as the
+        terrorists (ts) or counter-terrorists (cts). The terrorists win by
+        eliminating the counter-terrorists or successfully planting the bomb on
+        one of two bomb sites and preventing the counter-terrorists from
+        defusing it before it can go off. The counter-terrorists win by
+        eliminating the terrorists before the bomb is planted or by defusing a
+        planted bomb.
+      </p>
+      <p>
+        $100M+ total prize money earned
+        <a href="https://www.esportsearnings.com/games/245-counter-strike-global-offensive">Learn more</a>
+      </p>
+      <details>
+        <summary>
+          Top Organizations
+        </summary>
+        <ul>
+          <li>Astralis</li>
+          <li>Heroic</li>
+          <li>Furia</li>
+          <li>Vitality</li>
+          <li>Natus Vincere</li>
+        </ul>
+      </details>
+      <br>
+      <a class = "standalonelink" href="https://www.hltv.org/results">Recent match results</a>
+      <a class = "standalonelink" href="https://www.hltv.org/stats">Player and team stats</a>
+      <figure onmousemove="moveme(event,'crosshair')">
+        <img
+          alt="Pro crosshairs CSGO"
+          src="./images/crosshaircsgo.jpg"
+          width="320"
+          height="180"
+        />
+        <figcaption id="crosshair">
+        Custom map showing various crosshairs from pros.
+        </figcaption>
+      </figure>
+      <h3>Necessary Skills</h3>
+      <ol>
+        <li>
+          <strong>Mechanical Ability-</strong> Weapons have spray patterns to learn and grenades
+          have many "lineups" to learn to tactically cutoff and outplay the
+          enemy
+        </li>
+        <li>
+          <strong>Game Sense-</strong> Experience in the game, knowing in this situation what are
+          the likely moves of my opponents and how can I counter them
+          effectively
+        </li>
+        <li>
+          <strong>Map Knowledge-</strong> There are various competitive maps, that players need
+          to know very well. This includes different materials, peek spots,
+          boost spots
+        </li>
+      </ol>
+      <figure onmousemove="moveme(event,'mirage')">
+        <img
+          alt="MirageMapandCallouts"
+          src="./images/miragemap.jpg"
+          width="320"
+        />
+        <figcaption id="mirage">
+          CS:GO's Mirage map layout with callouts.
+        </figcaption>
+      </figure>
+      <h3>
+        Important Settings
+      </h3>
+      <p>
+        Changing in game settings to a style that suits you is imperative for
+        any game. While you need to come up with your own settings,
+        <a href="https://prosettings.net/counterstrike/">this link</a> will show
+        you the settings pros use when they play the game. Taking inspiration
+        from those better than you is a great way to improve. This includes
+        customizing your crosshair, changing the color, size, and style of your
+        crosshair will affect the amount of vision you have in the most
+        important part of the screen, where you are aiming.
+      </p>
+
+      <h3>
+        Tips and Tricks
+      </h3>
+      <ul>
+        <li>
+          Watching pro matches, which are streamed nearly every day on
+          <a href="https://www.twitch.tv/esl_csgo">Twitch</a> can offer you
+          insight on what to do in various situations, studying the actions of
+          the pros and applying those actiosn you liked into your own game can
+          help you improve.
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=eFab7sTSmEc&t=18s">This video</a>
+          by voo CSGO on youtube offers 10 basic tips that every CSGO player
+          should know.
+        </li>
+        <li>
+          TheWarOwl another youtuber has posted many tutorial videos that go in
+          depth on specific topics for CSGO you can find a playlist of all such
+          videos
+          <a href="https://www.youtube.com/playlist?list=PLHF999pjo89OKE2X_sudbAqQonX6Kz_BI">here</a>
+        </li>
+      </ul>
+      <br>
+      <button>Select a New Game to Explore</button>
+    </section>
+    
+    <section>
+      <a id="valorant"></a>
+      <h2>Valorant (<i>2020</i>)</h2>
+      <p class = "gameinfo">
+        Valorant is a 5v5 competitive tac-shooter matchup to plant or defuse the
+        Spike in a one-life-per-round, first to 13 series. More than guns and
+        bullets, you’ll choose an Agent armed with adaptive, swift, and lethal
+        abilities that create opportunities to let your gunplay shine.
+      </p>
+
+      <p>
+        $1.2M+ total prize money earned
+        <a href="https://www.esportsearnings.com/games/646-valorant">Learn more</a>
+      </p>
+      <figure onmousemove="moveme(event,'valmap')">
+        <img
+          alt="valorant map"
+          src="./images/valorantmap.jpg"
+        />
+        <figcaption id="valmap">
+          One of Valorant's maps and its callouts.
+        </figcaption>
+      </figure>
+      <details>
+        <summary>
+          Top Organizations
+        </summary>
+        <ul>
+          <li>GenG</li>
+          <li>T1</li>
+          <li>TSM</li>
+          <li>Cloud9</li>
+          <li>100 Thieves</li>
+        </ul>
+      </details>
+      <br>
+      <a class = "standalonelink" href="https://www.vlr.gg/rankings"
+        >Team ranking, standings, and stats</a
+      >
+      <h3>Necessary Skills</h3>
+      <ol>
+        <li>
+          <strong>Map Knowledge-</strong> It's important that players know the maps very well
+        </li>
+        <li>
+          <strong>Character Knowledge-</strong> knowing the different abilities that characters
+          have,and what you can do to counter or combine them to the best of
+          your ability
+        </li>
+        <li>
+          <strong>Mechanical Ability-</strong> knowing how to use your abilities and how to
+          control recoil and aim, in ways that involve accuracy and good timing
+        </li>
+        <li>
+          <strong>Teamplay-</strong> playing as a team and coordinating utility is crucial.
+          Players generally have a good understanding on how to play together
+        </li>
+      </ol>
+      <figure onmousemove="moveme(event,'valchar')">
+        <img
+          alt="ValorantCharacterList"
+          src="./images/valorantcharacterlist.jpeg"
+          width="250"
+        />
+        <figcaption id="valchar">
+        Various playable characters in Valorant.
+        </figcaption>
+      </figure>
+      <h3>
+        Tips and Tricks
+      </h3>
+      <ul>
+        <li>
+          Similar to CSGO the settings you use while playing the game are
+          important, pros settings by Valorant players can be found
+          <a href="https://prosettings.net/valorant/">here</a>. Valorant is a
+          game that takes a lot after CSGO so many tips from CSGO will apply
+          here.
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=rnyQK-ieY70">This video</a>
+          by HITSCAN - Ryan & Mysca goes over some important general tips for
+          the game.
+        </li>
+        <li>
+          Unlike CSGO, Valorant features unique characters to pick from while
+          playing, in
+          <a href="https://www.youtube.com/watch?v=1anlbscwgqM">this video</a>,
+          by ProGuides Valorant Tips, Tricks and Guides features tips for the
+          various characters you can pick from. This channel also has other
+          videos focused on specific aspects for the game which can be a
+          valuable asset to learn.
+        </li>
+      </ul>
+      <br>
+      <button>Select a New Game to Explore</button>
+    </section>
+    
+    <section>
+      <a id="rainbowsix"></a>
+      <h2>Rainbow Six: Siege (<i>2015</i>)</h2>
+      <p class = "gameinfo">
+        In Rainbow Six, theres different modes, and characters that can be used
+        in each game. Defender's have a phase to set up defense and prepare for
+        the oncoming attackers. Here's a video for beginner's to learn about the
+        game found on the Rainbow Six Siege official webpage:
+      </p>
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/lGYu0mSHMMQ"
+      >
+      </iframe>
+
+      <p>
+        $12M+ total prize money earned
+        <a href="https://www.esportsearnings.com/games/439-rainbow-six-siege">
+          Learn more
+        </a>
+      </p>
+
+      <details>
+        <summary>
+          Top Organizations
+        </summary>
+        <ul>
+          <li>G2</li>
+          <li>SSG</li>
+          <li>NiP</li>
+          <li>Liquid</li>
+          <li>EG</li>
+        </ul>
+      </details>
+      <br>
+      <a class = "standalonelink" href="https://www.ubisoft.com/en-us/esports/rainbow-six/siege/watch/global"
+        >Team standings, match results, and stats</a
+      >
+      <h3>Necessary Skills</h3>
+      <ol>
+        <li>
+          <strong>Map Knowledge-</strong> Understand the general layout of maps, and also what
+          parts of the map can be destroyed.
+        </li>
+        <li>
+          <strong>Character Knowledge-</strong> Understand what abilities each character has, and
+          what you need to do to play around them.
+        </li>
+        <li>
+          <strong>Timing-</strong> Knowing not only what to do, but when to do it. This is
+          important in a game with changing variables.
+        </li>
+      </ol>
+      <h3>
+        Tips and Tricks
+      </h3>
+      <ul>
+        <li>
+          Like all the other games, settings affect how you play, getting a good
+          sense of what settings suits you is imperative to success. To get
+          started follow <a href="https://prosettings.net/rainbow-6-pro-settings-gear-list/">this link</a>
+          to get an idea of what settings the pros use.
+        </li>
+        <li>
+          Watching pro matches to apply tactics used in the higher leagues can
+          aid in your own gameplay, Rainbow Six is streamed on
+          <a href="https://www.twitch.tv/rainbow6">Twitch</a> regularly.
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=e_r4PToanP4">This video</a>
+          by Disrupt Gaming goes over tips for general gameplay in Rainbow six
+          to get better.
+        </li>
+        <li>
+          Learning specific characters is important, not only is getting good at
+          specific characters going to help, but being able to utilize a lot of
+          characters will make you a better player.
+          <a
+            href="https://www.youtube.com/playlist?list=PLL_TDflRUrF13w1FpDrUPakqgn-J_lDE8"
+            >This playlist</a
+          >
+          by iceycat25 on Youtube includes a video featuring each operator.
+          Looking at such videos can you give you an idea on how the charactesr
+          work and when to best use them.
+        </li>
+      </ul>
+      <figure onmousemove="moveme(event,'r6char')" class = "left">
+        <img
+          class = "r6"
+          alt="r6characterlist"
+          src="./images/r6character.png"
+          width="320"
+        />
+        <figcaption id="r6char">
+          Many of the playable characters in R6.  
+        </figcaption>
+      </figure>
+      <figure onmousemove="moveme(event,'r6game')">
+        <img
+          alt="r6gameplay"
+          src="./images/r6gameplay.jpg"
+          width="320"
+        />
+        <figcaption id = "r6game">
+          A Snapshot in-game.
+        </figcaption>
+      </figure>
+      <br>
+      <button>Select a New Game to Explore</button>
+    </section>
+  </body>
+</html>
